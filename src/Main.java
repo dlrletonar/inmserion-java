@@ -26,13 +26,23 @@ public class Main {
         }else{
             System.out.println("pelicula actual popular.");
         }
-
-        for (int i = 0; i < 3; i++) {
-            Scanner teclado = new Scanner(System.in);
+        int n = 0;
+        while (n<3){
+                        Scanner teclado = new Scanner(System.in);
             System.out.println("Ingrese la puntuación a la pelicula: ");
             double notaPelicula = teclado.nextDouble();
             puntuacionPelicula = puntuacionPelicula + notaPelicula;
+            n++;
         }
+
+
+//        for (int i = 0; i < 3; i++) {
+//            Scanner teclado = new Scanner(System.in);
+//            System.out.println("Ingrese la puntuación a la pelicula: ");
+//            double notaPelicula = teclado.nextDouble();
+//            puntuacionPelicula = puntuacionPelicula + notaPelicula;
+//        }
+
         System.out.println("Puntuacion de la Pelicula = " + pelicula +" "+
                 puntuacionPelicula/3);
     }
